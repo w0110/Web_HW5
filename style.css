@@ -99,24 +99,16 @@ body {
     padding-left:20px;
     margin-top: 13px;
     margin-bottom: 14px;
+    border: 3px #F0F0F0 solid;
 }
 .button {
-    size: 30px;
-    width: 30px;
-    height: 30px;
-    /* background-color:#666;  */
+    background-image: "https://github.com/w0110/Web-homework/blob/main/picture/search-icon1.png?raw=true";
+    background-color: #F5F5F5;
     border: none;
-    /*color: white;*/
-    /*padding: 15px 32px;*/
     text-align: center;
-    /*text-decoration: none;
-    display: inline-block;*/
     font-size: 16px;
-    /* margin:5%; */
     padding: 5%;
     cursor: pointer;
-    /* margin-top:5px; */
-
 }
 
 .search {
@@ -165,6 +157,7 @@ body {
     margin-bottom: 14px;
     border-width: 10px;
     border-color: gray;
+    border: 6px #E7E7E7 solid;
 }
 
 .button2 {
@@ -174,28 +167,39 @@ body {
     background-color:#78E389; 
     border: none;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 15px;
     cursor: pointer;
-    margin-top:5px;
-    margin-right: 5px;
+    /* margin-top:5px; */
+    margin-right: 15px;
     border-radius: 34px;
+    display:flex;
+    padding-top: 10px;
+    padding-left: 16px;
+}
+.button2 p {
+    margin-left: 5px;
 }
 .bt {
     border-radius: 20px;
 }
 .search2 {
-    width:150px;
+    /* width:150px; */
+    width:560px;
     font-size: 16px;
     outline: none;
     border: none;
-    color: #FFFFFF;
-    /* background-color:#FFFFFF; */
     flex-direction:row;
     display: flex;
 }
 
 /*------------------- quick click --------------------*/
+#city-bt {
+    width: 123px;
+    height: 151px;
+    background: #FFFFFF;
+    border:none;
+}
 #city {
     float:left;
     width: 76px;
@@ -216,6 +220,7 @@ body {
 }
 
 .flex-quickpick {
+    background-color: #F7F7F7;
     display: flex;
     justify-content:space-around;
 }
@@ -227,6 +232,7 @@ body {
     margin-top: 127px;
     margin-bottom: 14px;
     font-size: 32px;
+    font-weight: bold;
 }
 .quick-left p {
     font-size: 14px;
@@ -235,7 +241,6 @@ body {
 }
 
 .flex-city {
-    
     display: flex;
     justify-content:space-around;
 }
@@ -266,6 +271,12 @@ body {
     margin-right: 20px;
     font-size: 15px;
 }
+
+.foot_head ul li:hover{
+    color: #1EB893;
+    font-size: 15px;
+}
+
 .foot_end {
     text-align: center;
     background-color: #1F1F1F;
