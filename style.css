@@ -1,0 +1,276 @@
+/* -------css for deleting orignal css-------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -----------------css by myself---------------------- */
+
+/*-- top --*/
+body {
+    width: 1440px;
+}
+.top {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+}
+/* .top img {
+    margin-left: 36px;
+    margin-top: 18px;
+    margin-bottom: 17px;
+} */
+.pick {
+    padding: 23px;
+    align-items: center;
+}
+.pick ul{
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+}
+
+.pick ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.pick ul li:hover{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #1EB893;
+    font-size: 15px;
+}
+.pick a{
+    text-decoration:none;/*不要底線*/
+}
+
+
+.choose {
+    width: 195px;
+    height: 41px;
+    display: flex;
+    width: 215px;
+    height: 41px;
+    align-items:center;
+    background-color:#F5F5F5;
+    border-radius: 34px;
+    padding-left:20px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+}
+.button {
+    size: 30px;
+    width: 30px;
+    height: 30px;
+    /* background-color:#666;  */
+    border: none;
+    /*color: white;*/
+    /*padding: 15px 32px;*/
+    text-align: center;
+    /*text-decoration: none;
+    display: inline-block;*/
+    font-size: 16px;
+    /* margin:5%; */
+    padding: 5%;
+    cursor: pointer;
+    /* margin-top:5px; */
+
+}
+
+.search {
+    width:150px;
+    outline: none;
+    border: none;
+    background-color:#F5F5F5;
+}
+
+/* --------------------- slid ------------------ */
+.slid {
+    width: 1440px;
+    height: 351px;
+    padding-top: 149px;
+    text-align: center;
+    background-image: url(https://github.com/w0110/Web-homework/blob/main/picture/bn.png?raw=true);
+    /* justify-content: center; 
+    align-items: center;  */
+}
+
+.slid h1 {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.slid p {
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-bottom: 53px;
+    
+}
+
+.choose2 {
+    margin: auto;
+    width: 691px;
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#FFFFFF;
+    border-radius: 34px;
+    padding-left:20px;
+    margin-top: 13px;
+    margin-bottom: 14px;
+    border-width: 10px;
+    border-color: gray;
+}
+
+.button2 {
+    /* size: 30px; */
+    width: 85px;
+    height: 40px;
+    background-color:#78E389; 
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top:5px;
+    margin-right: 5px;
+    border-radius: 34px;
+}
+.bt {
+    border-radius: 20px;
+}
+.search2 {
+    width:150px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    /* background-color:#FFFFFF; */
+    flex-direction:row;
+    display: flex;
+}
+
+/*------------------- quick click --------------------*/
+#city {
+    float:left;
+    width: 76px;
+    height: 76px;
+    background-color: #78E389;
+    border-radius:999em;    /*變圓形*/
+    text-align:center;
+    display: flex;          /* ★ */
+    align-items: center;    /* ★ */
+    margin: auto;
+}
+
+#city_img {
+    /* margin-top: 11px; */
+    position: absolute;
+    vertical-align : middle;
+    margin: auto;
+}
+
+.flex-quickpick {
+    display: flex;
+    justify-content:space-around;
+}
+
+.quick-left {
+    text-align:left;
+}
+.quick-left h2 {
+    margin-top: 127px;
+    margin-bottom: 14px;
+    font-size: 32px;
+}
+.quick-left p {
+    font-size: 14px;
+    color: #9A9A9A;
+    margin-bottom: 126px;
+}
+
+.flex-city {
+    
+    display: flex;
+    justify-content:space-around;
+}
+
+
+
+
+/*----------------------- foot -----------------------*/
+.flex-foot {
+    flex-direction: column;
+}
+
+.foot_head {
+    flex-direction : column;
+    background-color: #333333;
+    padding-top: 58px;
+    text-align: center;
+    padding-bottom: 59px;
+}
+.foot_head img {
+    padding-bottom: 29px;
+}
+.foot_head ul li{
+    display:inline;
+    color:#B2B2B2;
+    flex-direction:row;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+.foot_end {
+    text-align: center;
+    background-color: #1F1F1F;
+    color: #868686;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    font-size: 12px;
+}
