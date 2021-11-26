@@ -164,7 +164,8 @@ body {
     /* size: 30px; */
     width: 85px;
     height: 40px;
-    background-color:#78E389; 
+    /* background-color:#78E389; */
+    background-image:  linear-gradient(120deg, #78E389, #1EB893);;
     border: none;
     text-align: center;
     /* display: inline-block; */
@@ -194,29 +195,62 @@ body {
 }
 
 /*------------------- quick click --------------------*/
-#city-bt {
+
+.flex-city {
+    display: flex;
+    /* justify-content:space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid; */
+    grid-gap: 35px;
+    margin-top: 92px;
+    margin-bottom: 50px;
+    /* grid-template-columns: repeat(2, 108px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; */
+}
+
+.city-bt {
     width: 123px;
     height: 151px;
     background: #FFFFFF;
     border:none;
-}
-#city {
-    float:left;
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    /* height: 133px; */
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+.city {
+    width: 70px;
+    height: 70px;
+    background-image: linear-gradient(120deg, #78E389, #1EB893);
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 7px;
+
+    /* float:left;
     width: 76px;
     height: 76px;
     background-color: #78E389;
-    border-radius:999em;    /*變圓形*/
+    border-radius:999em;    
     text-align:center;
-    display: flex;          /* ★ */
-    align-items: center;    /* ★ */
-    margin: auto;
+    display: flex;          
+    align-items: center;    
+    margin: auto; */
 }
 
-#city_img {
-    /* margin-top: 11px; */
+.city img {
     position: absolute;
-    vertical-align : middle;
-    margin: auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
 }
 
 .flex-quickpick {
@@ -240,12 +274,22 @@ body {
     margin-bottom: 126px;
 }
 
-.flex-city {
-    display: flex;
-    justify-content:space-around;
+.city-md-bg .deco-img {
+    position: absolute;
+    /* top: 50%;*/
+    top: 759px;
 }
-
-
+.city-md-bg .gray-block {
+    width: 85%;
+    height: 329px;
+    border-radius: 0px 0px 136px 0px;
+}
+.gray-block{
+    background-color: #F6F6F6;
+}
+img, svg {
+    vertical-align: middle;
+}
 
 
 /*----------------------- foot -----------------------*/
@@ -284,4 +328,153 @@ body {
     padding-top: 3px;
     padding-bottom: 6px;
     font-size: 12px;
+}
+
+/* test-------------------------------------------- */
+
+
+.card {
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-width:0;
+    word-wrap:break-word;
+    background-color:#fff;
+    background-clip:border-box;
+    border:1px solid rgba(0,0,0,.125);
+    border-radius:.25rem
+}
+.card>hr {
+    margin-right:0;
+    margin-left:0
+}
+.card>.list-group {
+    border-top:inherit;
+    border-bottom:inherit
+}
+.card>.list-group:first-child {
+    border-top-width:0;
+    border-top-left-radius:calc(.25rem - 1px);
+    border-top-right-radius:calc(.25rem - 1px)
+}
+.card>.list-group:last-child {
+    border-bottom-width:0;
+    border-bottom-right-radius:calc(.25rem - 1px);
+    border-bottom-left-radius:calc(.25rem - 1px)
+}
+.card>.card-header+.list-group,.card>.list-group+.card-footer {
+    border-top:0
+}
+.card-body {
+    flex:1 1 auto;
+    padding:1rem 1rem
+}
+.card-title {
+    margin-bottom:.5rem
+}
+.card-subtitle {
+    margin-top:-.25rem;
+    margin-bottom:0
+}
+.card-text:last-child {
+    margin-bottom:0
+}
+.card-link:hover {
+    text-decoration:none
+}
+.card-link+.card-link {
+    margin-left:1rem
+}
+.card-header {
+    padding:.5rem 1rem;
+    margin-bottom:0;
+    background-color:rgba(0,0,0,.03);
+    border-bottom:1px solid rgba(0,0,0,.125)
+}
+.card-header:first-child {
+    border-radius:calc(.25rem - 1px) calc(.25rem - 1px) 0 0
+}
+.card-footer {
+    padding:.5rem 1rem;
+    background-color:rgba(0,0,0,.03);
+    border-top:1px solid rgba(0,0,0,.125)
+}
+.card-footer:last-child {
+    border-radius:0 0 calc(.25rem - 1px) calc(.25rem - 1px)
+}
+.card-header-tabs {
+    margin-right:-.5rem;
+    margin-bottom:-.5rem;
+    margin-left:-.5rem;
+    border-bottom:0
+}
+.card-header-pills {
+    margin-right:-.5rem;
+    margin-left:-.5rem
+}
+.card-img-overlay {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    padding:1rem;
+    border-radius:calc(.25rem - 1px)
+}
+.card-img,.card-img-bottom,.card-img-top {
+    width:100%
+}
+.card-img,.card-img-top {
+    border-top-left-radius:calc(.25rem - 1px);
+    border-top-right-radius:calc(.25rem - 1px)
+}
+.card-img,.card-img-bottom {
+    border-bottom-right-radius:calc(.25rem - 1px);
+    border-bottom-left-radius:calc(.25rem - 1px)
+}
+.card-group>.card {
+    margin-bottom:.75rem
+}
+.card-group>.card {
+    flex:1 0 0%;
+    margin-bottom:0
+}
+.card-group>.card+.card {
+    margin-left:0;
+    border-left:0
+}
+.card-group>.card:not(:last-child) {
+    border-top-right-radius:0;
+    border-bottom-right-radius:0
+}
+.card-group>.card:not(:last-child) .card-header,.card-group>.card:not(:last-child) .card-img-top {
+    border-top-right-radius:0
+}
+.card-group>.card:not(:last-child) .card-footer,.card-group>.card:not(:last-child) .card-img-bottom {
+    border-bottom-right-radius:0
+}
+.card-group>.card:not(:first-child) {
+    border-top-left-radius:0;
+    border-bottom-left-radius:0
+}
+.card-group>.card:not(:first-child) .card-header,.card-group>.card:not(:first-child) .card-img-top {
+    border-top-left-radius:0
+}
+.card-group>.card:not(:first-child) .card-footer,.card-group>.card:not(:first-child) .card-img-bottom {
+    border-bottom-left-radius:0
+}
+.accordion-button {
+    position:relative;
+    display:flex;
+    align-items:center;
+    width:100%;
+    padding:1rem 1.25rem;
+    font-size:1rem;
+    color:#212529;
+    text-align:left;
+    background-color:#fff;
+    border:0;
+    border-radius:0;
+    overflow-anchor:none;
+    transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease
 }
