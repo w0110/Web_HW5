@@ -7,8 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- 調整螢幕比例 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 </head>
 <body>
     <div class="top">
@@ -24,9 +23,10 @@
         </div>
         <div class="choose">
             <input type="text" class="search" placeholder="搜尋關鍵字...">
-            <button class="button"></button>
+            <button class="button1"></button>
         </div>
     </div>
+
     <div class="slid">
         <h1>想去哪裡玩？</h1>
         <p>這裡共有上千個活動及美食等著你去一同體驗</p>
@@ -37,87 +37,132 @@
             </div>
         </div>
     </div>
-    <div class="flex-quickpick">
-        <div class="quick-left">
-            <h2>縣市快選</h2>
-            <p>CHOOOSE CITIES</p>
+
+    <section class="choose-city">
+        <div class="city-md-bg">
+            <div class="gray-block"></div>
+            <img src="https://github.com/w0110/Web-homework/blob/main/picture/choose-city-deco-img.png?raw=true" alt="deco-img" class="deco-img">
+            <div class="quick-left">
+                <h2>縣市快選</h2>
+                <p>CHOOOSE CITIES</p>
+            </div>
         </div>
         <div class="flex-city">
-            <button id="city-bt">
-                <div id="city">
+            <button class="city-bt">
+                <div class="city">
                     <img src="https://github.com/pageshih/F2E_3rd_Week1/blob/master/app/assets/images/north%20of%20Taiwan%20icon.png?raw=true">
                 </div>
                 <p>北部</p>
             </button>
-            <button id="city-bt">
-                <div id="city">
+            <button class="city-bt">
+                <div class="city">
                     <img src="https://github.com/pageshih/F2E_3rd_Week1/blob/master/app/assets/images/middle%20of%20Taiwan%20icon.png?raw=true">
                 </div>
                 <p>中部</p>
             </button>
-            <button id="city-bt">
-                <div id="city">
+            <button class="city-bt">
+                <div class="city">
                     <img src="https://github.com/pageshih/F2E_3rd_Week1/blob/master/app/assets/images/south%20of%20Taiwan%20icon.png?raw=true">
                 </div>
                 <p>南部</p>
             </button>
-            <button id="city-bt">
-                <div id="city">
+            <button class="city-bt">
+                <div class="city">
                     <img src="https://github.com/pageshih/F2E_3rd_Week1/blob/master/app/assets/images/east%20of%20Taiwan%20icon.png?raw=true">
                 </div>
                 <p>東部</p>
             </button>
-            <button id="city-bt">
-                <div id="city">
+            <button class="city-bt">
+                <div class="city">
                     <img src="https://github.com/pageshih/F2E_3rd_Week1/blob/master/app/assets/images/surrounding%20islands%20of%20Taiwan%20icon.png?raw=true">
                 </div>
                 <p>離島</p>
             </button>
         </div>
     </div>
-    <div>
-        <div>
-            <div>
-                <h2>2021大溪豆干節</h2>
-                <p>花蓮縣壽豐鄉鹽寮村6鄰福德49-2號</p>
-                <div>
-                    <div>年度</div>
-                    <p>桃園市</p>
+    </section>
+    <img src="https://github.com/w0110/Web-homework/blob/main/picture/deco3.png?raw=true" alt="deco-img" class="deco2-img">
+
+
+    <div class="bd1">
+        <div class="c">
+            <div class="card" style="width: 18rem;">
+                <img src="https://github.com/w0110/Web-homework/blob/main/picture/unsplash_SahEnZR5Ni8.png?raw=true" class="card-img-top" alt="picture">
+                <div class="card-body">
+                  <h5 class="card-title">2021大溪豆干節</h5>
+                  <p class="card-text">花蓮縣壽豐鄉鹽寮村6鄰福德49-2號</p>
+                  <p><span class="badge bg-secondary">年度</span></p>
+                  <p><span class="badge bg-secondary">節慶</span></p>
+                  <a href="#" class="btn btn-primary">桃園市</a>
                 </div>
             </div>
-            <div>
-                <h2>2021臺北燈節</h2>
-                <p>臺北市政府觀光傳播局</p>
-                <div>
-                    <div>
-                        <div>節慶</div>
-                        <div>藝文</div>
-                    </div>
-                    <p>台北市</p>
+            <div class="card" style="width: 290px;">
+                <img src="https://github.com/w0110/Web-homework/blob/main/picture/unsplash_rknrvCrfS1k.png?raw=true" class="card-img-top" alt="picture">
+                <div class="card-body">
+                  <h5 class="card-title">2021臺北燈節</h5>
+                  <p class="card-text">臺北市政府觀光傳播局</p>
+                  <p><span class="badge bg-secondary">節慶</span></p>
+                  <p><span class="badge bg-secondary">藝文</span></p>
+                  <a href="#" class="btn btn-primary">台北市</a>
                 </div>
             </div>
-            <div>
-                <h2>2021桃園國際風箏節</h2>
-                <p>桃園市政府觀光旅遊局</p>
-                <div>
-                    <div>
-                        <div>節慶</div>
-                        <div>藝文</div>
-                    </div>
-                    <p>桃園市</p>
+            <div class="card" style="width: 18rem;">
+                <img src="https://github.com/w0110/Web-homework/blob/main/picture/unsplash_SahEnZR5Ni8.png?raw=true" class="card-img-top" alt="picture">
+                <div class="card-body">
+                  <h5 class="card-title">2021桃園國際風箏節</h5>
+                  <p class="card-text">桃園市政府觀光旅遊局</p>
+                  <p><span class="badge bg-secondary">節慶</span></p>
+                  <p><span class="badge bg-secondary">藝文</span></p>
+                  <a href="#" class="btn btn-primary">桃園市</a>
                 </div>
             </div>
-            <div>
-                <h2>多久沒有</h2>
-                <h2>出門走走了呢?</h2>
-                <p>Let’s get out</p>
-                <button>
-                    <p>更多FUNNY</p>
-                </button>
+        </div>
+        <div class="cR">
+            <h2>多久沒有</h2>
+            <h2>出門走走了呢?</h2>
+            <p>Let’s get out</p>
+            <button class="button3">
+                <p>更多FUNNY</p>
+            </button>
+        </div>
+    </div>
+    <div class="c2">
+        <div class="card" style="width: 18rem;">
+            <img src="https://github.com/w0110/Web-homework/blob/main/picture/unsplash_SahEnZR5Ni8.png?raw=true" class="card-img-top" alt="picture">
+            <div class="card-body">
+              <h5 class="card-title">2021大溪豆干節</h5>
+              <p class="card-text">花蓮縣壽豐鄉鹽寮村6鄰福德49-2號</p>
+              <p><span class="badge bg-secondary">年度</span></p>
+              <p><span class="badge bg-secondary">節慶</span></p>
+              <a href="#" class="btn btn-primary">桃園市</a>
+            </div>
+        </div>
+        <div class="card" style="width: 290px;">
+            <img src="https://github.com/w0110/Web-homework/blob/main/picture/unsplash_rknrvCrfS1k.png?raw=true" class="card-img-top" alt="picture">
+            <div class="card-body">
+              <h5 class="card-title">2021臺北燈節</h5>
+              <p class="card-text">臺北市政府觀光傳播局</p>
+              <p><span class="badge bg-secondary">節慶</span></p>
+              <p><span class="badge bg-secondary">藝文</span></p>
+              <a href="#" class="btn btn-primary">台北市</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://github.com/w0110/Web-homework/blob/main/picture/unsplash_SahEnZR5Ni8.png?raw=true" class="card-img-top" alt="picture">
+            <div class="card-body">
+              <h5 class="card-title">2021桃園國際風箏節</h5>
+              <p class="card-text">桃園市政府觀光旅遊局</p>
+              <p><span class="badge bg-secondary">節慶</span></p>
+              <p><span class="badge bg-secondary">藝文</span></p>
+              <a href="#" class="btn btn-primary">桃園市</a>
             </div>
         </div>
     </div>
 
+
+
+
+    <div class="gray-block2"></div>
     <div class="flex-foot">
         <div class="foot_head">
             <img src="https://github.com/w0110/Web-homework/blob/main/picture/logo2.png?raw=true" alt="icon">
