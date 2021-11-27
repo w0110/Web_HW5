@@ -48,6 +48,7 @@ table {
 /*-- top --*/
 body {
     width: 1440px;
+    height: 3452px;
 }
 .top {
     display: flex;
@@ -101,7 +102,7 @@ body {
     margin-bottom: 14px;
     border: 3px #F0F0F0 solid;
 }
-.button {
+.button1 {
     background-image: "https://github.com/w0110/Web-homework/blob/main/picture/search-icon1.png?raw=true";
     background-color: #F5F5F5;
     border: none;
@@ -198,6 +199,10 @@ body {
 
 .flex-city {
     display: flex;
+    z-index: 2;
+    position: absolute;
+    left: 462px;
+    top: 600px;
     /* justify-content:space-around;
     padding-left: 10px;
     padding-right: 10px;
@@ -261,6 +266,11 @@ body {
 
 .quick-left {
     text-align:left;
+    z-index: 2;
+    position: absolute;
+    left: 219px;
+    top: 600px;
+
 }
 .quick-left h2 {
     margin-top: 127px;
@@ -280,20 +290,88 @@ body {
     top: 759px;
 }
 .city-md-bg .gray-block {
-    width: 85%;
+    width: 1162px;
     height: 329px;
     border-radius: 0px 0px 136px 0px;
 }
 .gray-block{
     background-color: #F6F6F6;
+    z-index: -1;
 }
 img, svg {
     vertical-align: middle;
 }
+/* ------------------------- bd1 ---------------------------- */
+.bd1 {
+    justify-content: center;
+    display: flex;
+}
+.c{
+    margin-top: 158px;
+    justify-content: center;
+    display: flex;
+    grid-gap: 25px;
+}
+
+.cR {
+    margin-left: 53px;
+    margin-top: 206px;
+}
+
+.cR h2 {
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.cR p {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #9A9A9A;
+    margin-bottom: 27px;
+}
+
+.button3 {
+    width: 137px;
+    height: 45px;
+    background: linear-gradient(167.01deg, #78E389 -18.85%, #1EB893 92.39%);
+    border-radius: 60px;
+    /* background-image:  linear-gradient(120deg, #78E389, #1EB893);; */
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    padding-top: 12px;
+}
+.button3 p {
+    color: #FFFFFF;
+}
+/* ------------------------------ bd2 -------------------- */
+.c2{
+    margin-top: 31px;
+    justify-content: center;
+    display: flex;
+    grid-gap: 25px;
+}
 
 
 /*----------------------- foot -----------------------*/
+.gray-block2 {
+    position: absolute;
+    width: 1440px;
+    height: 728px;
+    top: 2900px;
+    background: #F3F3F3;
+    z-index: -3;
+    border-radius: 50%;
+}
 .flex-foot {
+    position: absolute;
+    top: 3218px;
+    width: 1440px;
     flex-direction: column;
 }
 
@@ -315,10 +393,12 @@ img, svg {
     margin-right: 20px;
     font-size: 15px;
 }
-
 .foot_head ul li:hover{
     color: #1EB893;
     font-size: 15px;
+}
+.foot_head a{
+    text-decoration:none;/*不要底線*/
 }
 
 .foot_end {
@@ -331,7 +411,12 @@ img, svg {
 }
 
 /* test-------------------------------------------- */
-
+.deco2-img {
+    position: absolute;
+    top: 1620px;
+    left: 1192px;
+    z-index: -3;
+}
 
 .card {
     position:relative;
@@ -344,27 +429,6 @@ img, svg {
     border:1px solid rgba(0,0,0,.125);
     border-radius:.25rem
 }
-.card>hr {
-    margin-right:0;
-    margin-left:0
-}
-.card>.list-group {
-    border-top:inherit;
-    border-bottom:inherit
-}
-.card>.list-group:first-child {
-    border-top-width:0;
-    border-top-left-radius:calc(.25rem - 1px);
-    border-top-right-radius:calc(.25rem - 1px)
-}
-.card>.list-group:last-child {
-    border-bottom-width:0;
-    border-bottom-right-radius:calc(.25rem - 1px);
-    border-bottom-left-radius:calc(.25rem - 1px)
-}
-.card>.card-header+.list-group,.card>.list-group+.card-footer {
-    border-top:0
-}
 .card-body {
     flex:1 1 auto;
     padding:1rem 1rem
@@ -374,9 +438,6 @@ img, svg {
 }
 .card-subtitle {
     margin-top:-.25rem;
-    margin-bottom:0
-}
-.card-text:last-child {
     margin-bottom:0
 }
 .card-link:hover {
@@ -431,37 +492,6 @@ img, svg {
 .card-img,.card-img-bottom {
     border-bottom-right-radius:calc(.25rem - 1px);
     border-bottom-left-radius:calc(.25rem - 1px)
-}
-.card-group>.card {
-    margin-bottom:.75rem
-}
-.card-group>.card {
-    flex:1 0 0%;
-    margin-bottom:0
-}
-.card-group>.card+.card {
-    margin-left:0;
-    border-left:0
-}
-.card-group>.card:not(:last-child) {
-    border-top-right-radius:0;
-    border-bottom-right-radius:0
-}
-.card-group>.card:not(:last-child) .card-header,.card-group>.card:not(:last-child) .card-img-top {
-    border-top-right-radius:0
-}
-.card-group>.card:not(:last-child) .card-footer,.card-group>.card:not(:last-child) .card-img-bottom {
-    border-bottom-right-radius:0
-}
-.card-group>.card:not(:first-child) {
-    border-top-left-radius:0;
-    border-bottom-left-radius:0
-}
-.card-group>.card:not(:first-child) .card-header,.card-group>.card:not(:first-child) .card-img-top {
-    border-top-left-radius:0
-}
-.card-group>.card:not(:first-child) .card-footer,.card-group>.card:not(:first-child) .card-img-bottom {
-    border-bottom-left-radius:0
 }
 .accordion-button {
     position:relative;
