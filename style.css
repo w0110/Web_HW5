@@ -103,7 +103,6 @@ body {
     border: 3px #F0F0F0 solid;
 }
 .button1 {
-    background-image: "https://github.com/w0110/Web-homework/blob/main/picture/search-icon1.png?raw=true";
     background-color: #F5F5F5;
     border: none;
     text-align: center;
@@ -356,6 +355,155 @@ img, svg {
     display: flex;
     grid-gap: 25px;
 }
+
+/* ------------------- food ----------------------------- */
+.food {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+}
+.gray-block3 {
+    position: absolute;
+    width: 733px;
+    height: 484px;
+    top: 139px;
+    background: #F6F6F6;
+    border-radius: 0px 242px 242px 0px;
+    z-index: -10;
+}
+.food-block {
+    display: flex;
+}
+.food-title {
+    margin-top: 139px;
+}
+.food-title h3 {
+    position: absolute;
+    left: 102px;
+    top: 250px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    
+}
+.food-title p {
+    position: absolute;
+    left: 107px;
+    top: 300px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #9A9A9A;
+}
+.button4 {
+    position: absolute;
+    left: 107px;
+    top: 343px;
+    width: 122px;
+    height: 45px;
+    background: linear-gradient(167.01deg, #78E389 -18.85%, #1EB893 92.39%);
+    border-radius: 60px;
+    /* background-image:  linear-gradient(120deg, #78E389, #1EB893);; */
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    /* padding-top: 12px; */
+}
+/* .button4 p {
+    color: #FFFFFF;
+} */
+.food-card-group {
+    height: 335px;
+    /* display: flex; */
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+.swiper {
+    /* margin-left: auto;
+    margin-right: auto;
+    position: relative; */
+    position: absolute;
+    left: 361px;
+    top: 200px;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+.h-100 {
+    height: 100% !important;
+}
+.food-card {
+    width: 231px;
+    height: 335px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+    display: flex;
+}
+.food-card img {
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.card-img {
+    border-bottom-right-radius: calc(0.625rem - 1px);
+    border-bottom-left-radius: calc(0.625rem - 1px);
+}
+.food-card-left h5{
+    position: relative;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.food-card-left p {
+    position: relative;
+    color: #E4E4E4;
+    font-size: 12px;
+}
+.food-city-tag {
+    width: 52px;
+    height: 21px;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    background-color: #0E0E0E;
+    border-radius: 10.5px;
+}
+.card-img, .card-img-bottom {
+    border-bottom-right-radius: calc(0.625rem - 1px);
+    border-bottom-left-radius: calc(0.625rem - 1px);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*----------------------- foot -----------------------*/
