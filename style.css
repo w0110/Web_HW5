@@ -658,7 +658,6 @@ img, svg {
     width: 1440px;
     flex-direction: column;
 }
-
 .foot_head {
     flex-direction : column;
     background-color: #333333;
@@ -684,7 +683,6 @@ img, svg {
 .foot_head a{
     text-decoration:none;/*不要底線*/
 }
-
 .foot_end {
     text-align: center;
     background-color: #1F1F1F;
@@ -693,7 +691,6 @@ img, svg {
     padding-bottom: 6px;
     font-size: 12px;
 }
-
 /* test-------------------------------------------- */
 .deco2-img {
     position: absolute;
