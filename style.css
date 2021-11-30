@@ -46,20 +46,17 @@ table {
 /* -----------------css by myself---------------------- */
 
 /*-- top --*/
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 body {
     width: 1440px;
     height: 3452px;
+    font-family: 'Noto Sans TC', 'Roboto';
 }
 .top {
     display: flex;
     flex-flow: row wrap;
     justify-content:space-between;
 }
-/* .top img {
-    margin-left: 36px;
-    margin-top: 18px;
-    margin-bottom: 17px;
-} */
 .pick {
     padding: 23px;
     align-items: center;
@@ -69,7 +66,6 @@ body {
     justify-content:space-around;
     position: relative;
 }
-
 .pick ul li {
     margin-left: 20px;
     margin-right: 20px;
@@ -86,7 +82,6 @@ body {
 .pick a{
     text-decoration:none;/*不要底線*/
 }
-
 
 .choose {
     width: 195px;
@@ -110,7 +105,6 @@ body {
     padding: 5%;
     cursor: pointer;
 }
-
 .search {
     width:150px;
     outline: none;
@@ -128,21 +122,18 @@ body {
     /* justify-content: center; 
     align-items: center;  */
 }
-
 .slid h1 {
     font-size: 40px;
     color: #FFFFFF;
     font-weight: bold;
     margin-bottom: 8px;
 }
-
 .slid p {
     font-size: 15px;
     color: #FFFFFF;
     margin-bottom: 53px;
     
 }
-
 .choose2 {
     margin: auto;
     width: 691px;
@@ -159,7 +150,6 @@ body {
     border-color: gray;
     border: 6px #E7E7E7 solid;
 }
-
 .button2 {
     /* size: 30px; */
     width: 85px;
@@ -214,7 +204,6 @@ body {
     -ms-flex-pack: center;
     justify-content: center; */
 }
-
 .city-bt {
     width: 123px;
     height: 151px;
@@ -237,18 +226,7 @@ body {
     border-radius: 50%;
     position: relative;
     margin-bottom: 7px;
-
-    /* float:left;
-    width: 76px;
-    height: 76px;
-    background-color: #78E389;
-    border-radius:999em;    
-    text-align:center;
-    display: flex;          
-    align-items: center;    
-    margin: auto; */
 }
-
 .city img {
     position: absolute;
     top:50%;
@@ -256,13 +234,11 @@ body {
     transform: translate(-50%, -50%);
     object-fit: contain;
 }
-
 .flex-quickpick {
     background-color: #F7F7F7;
     display: flex;
     justify-content:space-around;
 }
-
 .quick-left {
     text-align:left;
     z-index: 2;
@@ -311,12 +287,73 @@ img, svg {
     display: flex;
     grid-gap: 25px;
 }
-
+.activity-card {
+    width: 249px;
+    height: 349px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+}
+.activity-img {
+    width:100%;
+}
+.activity-title {
+    position: relative;
+    left: 14px;
+    top: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.activity-address {
+    position: relative;
+    left: 14px;
+    top: 18px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #A8A8A8;
+}
+.activity-hashtag-box {
+    position: relative;
+    left: 14px;
+    top: 69px;
+    display: flex;
+}
+.activity-hashtag {
+    position: relative;
+    margin-right: 5px;
+    width: 42px;
+    height: 22px;
+    /* left: 117px;
+    top: 30px; */
+    text-align: center;
+    background: #EDEDED;
+    border-radius: 11px;
+}
+.activity-hashtag p {
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+}
+.activity-city {
+    position: relative;
+    left: 190px;
+    top: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #0085FF;
+}
 .cR {
     margin-left: 53px;
     margin-top: 206px;
 }
-
 .cR h2 {
     font-size: 32px;
     line-height: 46px;
@@ -332,7 +369,6 @@ img, svg {
     color: #9A9A9A;
     margin-bottom: 27px;
 }
-
 .button3 {
     width: 137px;
     height: 45px;
@@ -414,9 +450,6 @@ img, svg {
     cursor: pointer;
     /* padding-top: 12px; */
 }
-/* .button4 p {
-    color: #FFFFFF;
-} */
 .food-card-group {
     height: 335px;
     /* display: flex; */
@@ -494,18 +527,121 @@ img, svg {
     border-bottom-left-radius: calc(0.625rem - 1px);
 }
 
+.button-previous {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 325px;
+    top: 2000px;
+    background: rgba(255, 255, 255, 0.63);
+    border-radius: 50%;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+}
+.button-previous img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+
+}
 
 
 
-
-
-
-
-
-
-
-
-
+/* -------------------- hotel ---------------------------- */
+.hotel h3 {
+    position: absolute;
+    height: 52px;
+    left: 646px;
+    top: 2535px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.hotel-title-p {
+    position: absolute;
+    left: 645px;
+    top: 2599px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #9A9A9A;
+}
+.hotel-card {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    width: 290px;
+    height: 347px;
+}
+.hotel-card-img {
+    position: relative;    
+    border-radius: 10px 10px 0px 0px;
+}
+.hotel-card h5 {
+    position: relative;
+    left: 14px;
+    top: 11px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.hotel-sub-title {
+    position: relative;
+    left: 14px; 
+    top: 12px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #A8A8A8;
+}
+.hotel-cost {
+    position: relative;
+    left: 14px; 
+    top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.hotel-sub-cost {
+    position: relative;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #A8A8A8;
+}
+.hotel-city {
+    position: relative;
+    left: 220px;
+    top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #0085FF;
+}
+.button5 {
+    position: absolute;
+    width: 121px;
+    height: 45px;
+    left: 661px;
+    top: 3108px;
+    background: linear-gradient(167.01deg, #78E389 -18.85%, #1EB893 92.39%);
+    border-radius: 60px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
 /*----------------------- foot -----------------------*/
 .gray-block2 {
     position: absolute;
